@@ -9,7 +9,7 @@
 #ifndef __MERIDIAN_COMMUNICATION_MERIDIAN_DIAGNOSTIC_UNIT_HPP__
 #define __MERIDIAN_COMMUNICATION_MERIDIAN_DIAGNOSTIC_UNIT_HPP__
 // ヘッダファイルの読み込み
-#include "interface/i_mrd_diagnostic.hpp"
+#include "meridian/interface/i_mrd_diagnostic.hpp"
 
 namespace meridian {
 namespace communication {

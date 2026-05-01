@@ -9,7 +9,7 @@
 #ifndef __MERIDIAN_COMMUNICATION_I_MRD_DIAGNOSTIC_HPP__
 #define __MERIDIAN_COMMUNICATION_I_MRD_DIAGNOSTIC_HPP__
 // ヘッダファイルの読み込み
-#include "meridim.hpp"
+#include "meridian/meridim.hpp"
 // ライブラリ導入
 #include <stdarg.h>
 #include <stdio.h>
@@ -81,7 +81,7 @@ public:
   void log(OUTPUT_LOG_LEVEL a_level, bool a_newline, const char *format, ...) {
     if (this->_output_log) {
       if (this->_level_system >= a_level) {
-        char loc_buf[this->_BUFFER_SIZE];
+        char loc_buf[MERIDIAN_COMMUNICATION_BUFFER_SIZE] = {0};
         char *message = loc_buf;
         va_list arg;
         va_list copy;
@@ -143,8 +143,7 @@ protected:
     }
   }
 
-  bool _output_log = false;                                    ///! Output control flag
-  const int _BUFFER_SIZE = MERIDIAN_COMMUNICATION_BUFFER_SIZE; ///! Buffer size
+  bool _output_log = false; ///! Output control flag
 
 private:
 #ifdef MERIDIAN_DEFAULT_SYSTEM_LOG_LEVEL

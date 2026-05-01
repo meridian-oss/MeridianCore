@@ -9,8 +9,8 @@
 #ifndef __MERIDIAN_COMMUNICATION_I_MRD_CONVERSATION_HPP__
 #define __MERIDIAN_COMMUNICATION_I_MRD_CONVERSATION_HPP__
 // ヘッダファイルの読み込み
-#include "meridim.hpp"
-#include "mrd_utils/meridian_diagnostic_unit.hpp"
+#include "meridian/communication/meridian_diagnostic_unit.hpp"
+#include "meridian/meridim.hpp"
 // ライブラリ導入
 #include <string.h>
 

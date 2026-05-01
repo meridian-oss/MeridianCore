@@ -9,9 +9,9 @@
 #ifndef __MERIDIAN_MODULES_I_MRD_DRIVER_HPP__
 #define __MERIDIAN_MODULES_I_MRD_DRIVER_HPP__
 // ヘッダファイルの読み込み
-#include "meridim.hpp"
-#include "meridian_core_settings.hpp"
-#include "mrd_utils/meridian_diagnostic_unit.hpp"
+#include "meridian/communication/meridian_diagnostic_unit.hpp"
+#include "meridian/meridian_core_settings.hpp"
+#include "meridian/meridim.hpp"
 
 namespace meridian {
 namespace modules {

@@ -9,11 +9,11 @@
 #ifndef __MERIDIAN_BOARD_I_MRD_BOARD_HPP__
 #define __MERIDIAN_BOARD_I_MRD_BOARD_HPP__
 // ヘッダファイルの読み込み
-#include "meridim.hpp"
-#include "interface/i_mrd_app.hpp"
-#include "interface/i_mrd_conversation.hpp"
-#include "interface/i_mrd_driver.hpp"
-#include "mrd_utils/meridian_diagnostic_unit.hpp"
+#include "meridian/communication/meridian_diagnostic_unit.hpp"
+#include "meridian/interface/i_mrd_app.hpp"
+#include "meridian/interface/i_mrd_conversation.hpp"
+#include "meridian/interface/i_mrd_driver.hpp"
+#include "meridian/meridim.hpp"
 // ライブラリ導入
 #include <list>
 
