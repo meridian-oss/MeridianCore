@@ -9,9 +9,9 @@
 #ifndef __MERIDIAN_APP_I_MRD_APP_HPP__
 #define __MERIDIAN_APP_I_MRD_APP_HPP__
 // ヘッダファイルの読み込み
-#include "meridim.hpp"
-#include "meridian_core_settings.hpp"
-#include "mrd_utils/meridian_diagnostic_unit.hpp"
+#include "meridian/communication/meridian_diagnostic_unit.hpp"
+#include "meridian/meridian_core_settings.hpp"
+#include "meridian/meridim.hpp"
 
 namespace meridian {
 namespace app {
