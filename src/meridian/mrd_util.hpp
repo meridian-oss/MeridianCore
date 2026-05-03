@@ -20,7 +20,7 @@ namespace meridian {
 /// @param a_arr 配列
 /// @param a_size 配列の長さ
 /// @return 0以外が入っている最大のIndex. すべて0の場合は1を返す.
-int mrd_max_used_index(const int a_arr[], int a_size) {
+inline int mrd_max_used_index(const int a_arr[], int a_size) {
   int max_index_tmp = 0;
   for (int i = 0; i < a_size; ++i) {
     if (a_arr[i] != 0) {

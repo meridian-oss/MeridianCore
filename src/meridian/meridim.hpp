@@ -73,7 +73,7 @@ struct Meridim {
   uint16_t checksum; ///! CHECK SUM
 };
 
-void mrd_countup(Meridim &a_meridim) {
+inline void mrd_countup(Meridim &a_meridim) {
   if (MERIDIM_SEQUENTIAL_MAX <= a_meridim.sequential) {
     a_meridim.sequential = 0;
   } else {
@@ -81,7 +81,7 @@ void mrd_countup(Meridim &a_meridim) {
   }
 }
 
-void set_meridim(Meridim &a_meridim, uint8_t a_data[], int size) {
+inline void set_meridim(Meridim &a_meridim, uint8_t a_data[], int size) {
   if (MERIDIM_BYTE_SIZE <= size) {
     a_meridim.master_command = (uint16_t)((a_data[1] << 8) | a_data[0]);
     a_meridim.sequential = (uint16_t)((a_data[3] << 8) | a_data[2]);
